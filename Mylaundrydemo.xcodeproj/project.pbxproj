@@ -17,6 +17,10 @@
 		7BF2A97B1CA82305007A8D42 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF2A97A1CA82305007A8D42 /* loginViewController.swift */; };
 		7BF2A97D1CA82498007A8D42 /* STHeiti-Light.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 7BF2A97C1CA82498007A8D42 /* STHeiti-Light.ttc */; };
 		7BF2A9801CA831E1007A8D42 /* Customcolors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF2A97F1CA831E1007A8D42 /* Customcolors.swift */; };
+		7BF2A9821CA963B4007A8D42 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF2A9811CA963B4007A8D42 /* HomeViewController.swift */; };
+		7BF2A9841CAAA041007A8D42 /* RXProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF2A9831CAAA041007A8D42 /* RXProgressHUD.swift */; };
+		7BF2A9861CAAA0CA007A8D42 /* RXHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF2A9851CAAA0CA007A8D42 /* RXHUD.swift */; };
+		7BF2A9881CAAC752007A8D42 /* pieceWashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF2A9871CAAC752007A8D42 /* pieceWashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		7BF2A97A1CA82305007A8D42 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		7BF2A97C1CA82498007A8D42 /* STHeiti-Light.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = "STHeiti-Light.ttc"; path = "../../../../百度云同步盘/麦子洗衣/美术资源/字体、色彩/STHeiti-Light.ttc"; sourceTree = "<group>"; };
 		7BF2A97F1CA831E1007A8D42 /* Customcolors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Customcolors.swift; path = ../../maizidemo02/maizidemo02/Customcolors.swift; sourceTree = "<group>"; };
+		7BF2A9811CA963B4007A8D42 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7BF2A9831CAAA041007A8D42 /* RXProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RXProgressHUD.swift; path = ../../../../Downloads/RXProgressHUD/RXProgressHUD/RXProgressHUD.swift; sourceTree = "<group>"; };
+		7BF2A9851CAAA0CA007A8D42 /* RXHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RXHUD.swift; path = ../../../../Downloads/RXProgressHUD/RXProgressHUD/RXHUD.swift; sourceTree = "<group>"; };
+		7BF2A9871CAAC752007A8D42 /* pieceWashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pieceWashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +140,10 @@
 		7BE6AD311CA787E1001C8009 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7BF2A9871CAAC752007A8D42 /* pieceWashViewController.swift */,
 				7BF2A97A1CA82305007A8D42 /* loginViewController.swift */,
 				7BE6AD2D1CA01CA5001C8009 /* SplashViewController.swift */,
+				7BF2A9811CA963B4007A8D42 /* HomeViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -142,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				7BE6AD061CA01871001C8009 /* Assets.xcassets */,
+				7BF2A9831CAAA041007A8D42 /* RXProgressHUD.swift */,
+				7BF2A9851CAAA0CA007A8D42 /* RXHUD.swift */,
 				7BF2A97C1CA82498007A8D42 /* STHeiti-Light.ttc */,
 				7BE6AD0B1CA01871001C8009 /* Info.plist */,
 				7BF2A97F1CA831E1007A8D42 /* Customcolors.swift */,
@@ -284,6 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BF2A9881CAAC752007A8D42 /* pieceWashViewController.swift in Sources */,
+				7BF2A9841CAAA041007A8D42 /* RXProgressHUD.swift in Sources */,
+				7BF2A9821CA963B4007A8D42 /* HomeViewController.swift in Sources */,
+				7BF2A9861CAAA0CA007A8D42 /* RXHUD.swift in Sources */,
 				7BF2A97B1CA82305007A8D42 /* loginViewController.swift in Sources */,
 				7BE6AD2E1CA01CA5001C8009 /* SplashViewController.swift in Sources */,
 				7BF2A9801CA831E1007A8D42 /* Customcolors.swift in Sources */,

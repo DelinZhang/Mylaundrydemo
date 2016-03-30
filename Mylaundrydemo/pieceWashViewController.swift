@@ -1,40 +1,33 @@
 //
-//  loginViewController.swift
+//  pieceWashViewController.swift
 //  Mylaundrydemo
 //
-//  Created by Delin on 16/3/27.
+//  Created by Delin on 16/3/29.
 //  Copyright © 2016年 Delin-Zhang. All rights reserved.
 //
 
 import UIKit
 
-class loginViewController: UIViewController {
+class pieceWashViewController: UIViewController {
 
-    @IBOutlet weak var phoneTextfile: UITextField!
-    @IBOutlet weak var vericodeTextfile: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupView()
 
+        self.setupView()
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func loginBut(sender: UIButton) {
-        HUD.showSuccess("登录成功!")
-    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     private func setupView(){
-        
-        self.phoneTextfile.layer.borderWidth = 1.0
-        self.phoneTextfile.layer.borderColor = UIColor.getLightBorderColor().CGColor
-        self.vericodeTextfile.layer.borderWidth = 1.0
-        self.vericodeTextfile.layer.borderColor = UIColor.getLightBorderColor().CGColor
-        
+        self.navigationController?.navigationBarHidden = false
+        self.navigationItem.title = "件洗"
+        self.navigationController?.navigationBar.tintColor = UIColor.getbluewordColor()
+        self.navigationItem.leftBarButtonItem?.image = UIImage(named: "1-1")
+//        self.navigationController.
     }
-    
 
     /*
     // MARK: - Navigation
