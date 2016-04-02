@@ -8,12 +8,16 @@
 
 import UIKit
 
-class pieceWashViewController: UIViewController {
+class pieceWashViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate{
 
+    @IBOutlet weak var colection1: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.setupView()
+        colection1.dataSource = self
+        colection1.delegate = self
+
         // Do any additional setup after loading the view.
     }
     
@@ -22,12 +26,26 @@ class pieceWashViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     private func setupView(){
-        self.navigationController?.navigationBarHidden = false
-        self.navigationItem.title = "件洗"
+       
         self.navigationController?.navigationBar.tintColor = UIColor.getbluewordColor()
-        self.navigationItem.leftBarButtonItem?.image = UIImage(named: "1-1")
-//        self.navigationController.
+        self.navigationItem.title = "件洗"
+        
+        
+//        self.navigationItem.leftBarButtonItem?.image = UIImage(named: "1-1")
     }
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let item = self.colection1.dequeueReusableCellWithReuseIdentifier("clothecell", forIndexPath: indexPath)
+        return item
+        
+    }
+
 
     /*
     // MARK: - Navigation

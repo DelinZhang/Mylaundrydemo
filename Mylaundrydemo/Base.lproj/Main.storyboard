@@ -13,6 +13,7 @@
             <string>STHeitiTC-Light</string>
             <string>STHeitiSC-Light</string>
             <string>STHeitiSC-Light</string>
+            <string>STHeitiTC-Light</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -367,9 +368,92 @@
                     <view key="view" contentMode="scaleToFill" id="DLi-CS-TMn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1Jp-x1-rNg">
+                                <rect key="frame" x="-4" y="64" width="328" height="455"/>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bux-b5-9MH">
+                                    <size key="itemSize" width="140" height="160"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="clothecell" id="tWn-BE-e9w">
+                                        <rect key="frame" x="0.0" y="64" width="140" height="160"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="140" height="160"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VqF-MG-i0i">
+                                                    <rect key="frame" x="39" y="8" width="63" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="63" id="EDR-3w-2E2"/>
+                                                        <constraint firstAttribute="height" constant="70" id="i15-VU-1Lu"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kCy-KD-dRG">
+                                                    <rect key="frame" x="16" y="88" width="108" height="1"/>
+                                                    <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="a5D-69-5W4"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bi-7n-cIa">
+                                                    <rect key="frame" x="53.5" y="99" width="33" height="18.5"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="价格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRO-Zg-A8N">
+                                                    <rect key="frame" x="54" y="122.5" width="32" height="22.5"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="16"/>
+                                                    <color key="textColor" red="1" green="0.30196078430000001" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="VqF-MG-i0i" firstAttribute="centerX" secondItem="tWn-BE-e9w" secondAttribute="centerX" id="49d-j1-g4n"/>
+                                            <constraint firstAttribute="topMargin" secondItem="VqF-MG-i0i" secondAttribute="top" id="7Qi-2p-mVz"/>
+                                            <constraint firstItem="iRO-Zg-A8N" firstAttribute="top" secondItem="4bi-7n-cIa" secondAttribute="bottom" constant="5" id="7d1-3Z-3G9"/>
+                                            <constraint firstItem="4bi-7n-cIa" firstAttribute="centerX" secondItem="tWn-BE-e9w" secondAttribute="centerX" id="C6l-IY-Z9l"/>
+                                            <constraint firstItem="kCy-KD-dRG" firstAttribute="leading" secondItem="tWn-BE-e9w" secondAttribute="leadingMargin" constant="8" id="DtZ-Ef-15g"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="kCy-KD-dRG" secondAttribute="trailing" constant="8" id="MDL-g2-X0W"/>
+                                            <constraint firstAttribute="leadingMargin" secondItem="kCy-KD-dRG" secondAttribute="leading" constant="8" id="QMv-Qo-pOf"/>
+                                            <constraint firstItem="4bi-7n-cIa" firstAttribute="top" secondItem="kCy-KD-dRG" secondAttribute="bottom" constant="10" id="ZAi-9b-Wrf"/>
+                                            <constraint firstItem="kCy-KD-dRG" firstAttribute="top" secondItem="VqF-MG-i0i" secondAttribute="bottom" constant="10" id="bHP-xT-seF"/>
+                                            <constraint firstItem="VqF-MG-i0i" firstAttribute="leading" secondItem="tWn-BE-e9w" secondAttribute="leadingMargin" constant="31" id="bot-4n-IGo"/>
+                                            <constraint firstItem="4bi-7n-cIa" firstAttribute="leading" secondItem="kCy-KD-dRG" secondAttribute="trailing" constant="-71" id="hAN-rU-Jm5"/>
+                                            <constraint firstItem="iRO-Zg-A8N" firstAttribute="centerX" secondItem="tWn-BE-e9w" secondAttribute="centerX" id="iS8-ER-yrl"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="VqF-MG-i0i" secondAttribute="trailing" constant="30" id="msg-1U-vl3"/>
+                                        </constraints>
+                                        <size key="customSize" width="140" height="160"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="QMv-Qo-pOf"/>
+                                                <exclude reference="hAN-rU-Jm5"/>
+                                            </mask>
+                                        </variation>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Jp-x1-rNg" firstAttribute="top" secondItem="mWi-wT-egB" secondAttribute="bottom" id="3nJ-kn-Nbu"/>
+                            <constraint firstItem="ozk-3y-ygS" firstAttribute="top" secondItem="1Jp-x1-rNg" secondAttribute="bottom" id="8sf-Mg-Xmm"/>
+                            <constraint firstItem="1Jp-x1-rNg" firstAttribute="leading" secondItem="DLi-CS-TMn" secondAttribute="leadingMargin" constant="-20" id="P5j-Sr-y5J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Jp-x1-rNg" secondAttribute="trailing" constant="-20" id="eV9-5c-JNh"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="colection1" destination="1Jp-x1-rNg" id="S8V-Tq-Wbt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T0p-KI-MtI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
