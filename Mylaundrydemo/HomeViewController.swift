@@ -13,15 +13,28 @@ class HomeViewController: UIViewController {
     private var placename:UILabel?
     var tilleimages: UIImageView?
     var title1view : UIView?
+    var washBVC : WashBagViewController?
     private let screensize:CGRect = UIScreen.mainScreen().bounds
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupView()
+        self.setupWash()
+        
+        
 
         // Do any additional setup after loading the view.
     }
    
 
+    @IBAction func washBag(sender: UIButton) {
+        if washBVC?.view.superview == nil
+        {self.view.addSubview((washBVC?.view)!)
+        }
+        washBVC?.view.hidden = false
+        print("1")
+        
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -42,8 +55,13 @@ class HomeViewController: UIViewController {
         
     }
     private func clickplacebtu(){
-        print("1")
         
+    }
+    func setupWash(){
+        washBVC = self.storyboard?.instantiateViewControllerWithIdentifier("WashBagVC") as? WashBagViewController
+        self.addChildViewController(washBVC!)
+        washBVC!.view.hidden = true
+        self.view.addSubview((washBVC?.view)!)
     }
     
 
