@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7B0200541CB0B7200093004A /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0200531CB0B7200093004A /* UserViewController.swift */; };
 		7B0200581CB1F8ED0093004A /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0200571CB1F8ED0093004A /* TabbarViewController.swift */; };
+		7B0200631CB3F6A60093004A /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0200621CB3F6A60093004A /* MoreViewController.swift */; };
 		7BE6AD001CA01871001C8009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE6ACFF1CA01871001C8009 /* AppDelegate.swift */; };
 		7BE6AD051CA01871001C8009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE6AD031CA01871001C8009 /* Main.storyboard */; };
 		7BE6AD071CA01871001C8009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BE6AD061CA01871001C8009 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		7B0200531CB0B7200093004A /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		7B0200571CB1F8ED0093004A /* TabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabbarViewController.swift; path = ../TabbarViewController.swift; sourceTree = "<group>"; };
+		7B0200621CB3F6A60093004A /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		7BE6ACFC1CA01871001C8009 /* Mylaundrydemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mylaundrydemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE6ACFF1CA01871001C8009 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BE6AD041CA01871001C8009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -94,6 +96,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B02005B1CB3F4840093004A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7B0200571CB1F8ED0093004A /* TabbarViewController.swift */,
+				7BF2A9871CAAC752007A8D42 /* pieceWashViewController.swift */,
+				7BF2A9901CAFF00D007A8D42 /* WashBagViewController.swift */,
+				7BF2A9811CA963B4007A8D42 /* HomeViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		7B02005C1CB3F4960093004A /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				7BE6AD2D1CA01CA5001C8009 /* SplashViewController.swift */,
+			);
+			name = Splash;
+			sourceTree = "<group>";
+		};
+		7B02005D1CB3F4A50093004A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7BF2A97A1CA82305007A8D42 /* LoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		7B02005E1CB3F4AE0093004A /* More */ = {
+			isa = PBXGroup;
+			children = (
+				7B0200621CB3F6A60093004A /* MoreViewController.swift */,
+			);
+			name = More;
+			sourceTree = "<group>";
+		};
+		7B02005F1CB3F4BD0093004A /* User */ = {
+			isa = PBXGroup;
+			children = (
+				7B0200531CB0B7200093004A /* UserViewController.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
 		7BE6ACF31CA01871001C8009 = {
 			isa = PBXGroup;
 			children = (
@@ -146,13 +191,11 @@
 		7BE6AD311CA787E1001C8009 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7B0200571CB1F8ED0093004A /* TabbarViewController.swift */,
-				7BF2A9901CAFF00D007A8D42 /* WashBagViewController.swift */,
-				7BF2A9871CAAC752007A8D42 /* pieceWashViewController.swift */,
-				7B0200531CB0B7200093004A /* UserViewController.swift */,
-				7BF2A97A1CA82305007A8D42 /* LoginViewController.swift */,
-				7BE6AD2D1CA01CA5001C8009 /* SplashViewController.swift */,
-				7BF2A9811CA963B4007A8D42 /* HomeViewController.swift */,
+				7B02005C1CB3F4960093004A /* Splash */,
+				7B02005D1CB3F4A50093004A /* Login */,
+				7B02005B1CB3F4840093004A /* Home */,
+				7B02005F1CB3F4BD0093004A /* User */,
+				7B02005E1CB3F4AE0093004A /* More */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -322,6 +365,7 @@
 				7BF2A97B1CA82305007A8D42 /* LoginViewController.swift in Sources */,
 				7BF2A9911CAFF00D007A8D42 /* WashBagViewController.swift in Sources */,
 				7BE6AD2E1CA01CA5001C8009 /* SplashViewController.swift in Sources */,
+				7B0200631CB3F6A60093004A /* MoreViewController.swift in Sources */,
 				7BF2A9801CA831E1007A8D42 /* Customcolors.swift in Sources */,
 				7BE6AD001CA01871001C8009 /* AppDelegate.swift in Sources */,
 			);

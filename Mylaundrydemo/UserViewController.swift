@@ -16,7 +16,7 @@ class UserViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupView()
-        self.addButons()
+//        self.addButons()
   
         // Do any additional setup after loading the view.
     }
@@ -31,28 +31,28 @@ class UserViewController: UIViewController {
         self.navigationController?.navigationBar.barStyle = .BlackTranslucent
     
     }
-    func addButons(){
-        let images = ["","","","",""]
-        let width = CGRectGetWidth(self.view.frame)/3
-        let hight = CGRectGetWidth(self.view.frame)/3 + 80
-        var index = 0
-        var orgiony = CGRectGetMaxX(self.userProfile.frame)
-        for image in images{
-            let butoview = UIView(frame: CGRectMake(width * CGFloat(index),
-                                                    orgiony,
-                                                    width,
-                                                    hight))
-            let butn = UIButton(type: .Custom)
-            let label = UILabel(frame: CGRectMake(0,0,CGRectGetWidth(butoview.frame),CGRectGetHeight(butoview.frame)-30))
-            self.contentView.addSubview(butn)
-            self.contentView.addSubview(label)
-            
-            
-        }
-        
+//    func addButons(){
+//        let images = ["","","","",""]
+//        let width = CGRectGetWidth(self.view.frame)/3
+//        let hight = CGRectGetWidth(self.view.frame)/3 + 80
+//        var index = 0
+//        var orgiony = CGRectGetMaxX(self.userProfile.frame)
+//        for image in images{
+//            let butoview = UIView(frame: CGRectMake(width * CGFloat(index),
+//                                                    orgiony,
+//                                                    width,
+//                                                    hight))
+//            let butn = UIButton(type: .Custom)
+//            let label = UILabel(frame: CGRectMake(0,0,CGRectGetWidth(butoview.frame),CGRectGetHeight(butoview.frame)-30))
+//            self.contentView.addSubview(butn)
+//            self.contentView.addSubview(label)
+//            
+//            
+//        }
+//        
     }
     
-   
+
     
 
-}
+
