@@ -28,6 +28,8 @@ class pieceWashViewController: UIViewController,UICollectionViewDataSource,UICol
     private func setupView(){
        
         self.navigationController?.navigationBar.tintColor = UIColor.getbluewordColor()
+        
+
         self.navigationItem.title = "件洗"
         
         

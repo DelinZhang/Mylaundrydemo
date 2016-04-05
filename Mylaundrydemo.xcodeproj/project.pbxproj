@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B0200541CB0B7200093004A /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0200531CB0B7200093004A /* UserViewController.swift */; };
+		7B0200581CB1F8ED0093004A /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0200571CB1F8ED0093004A /* TabbarViewController.swift */; };
 		7BE6AD001CA01871001C8009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE6ACFF1CA01871001C8009 /* AppDelegate.swift */; };
 		7BE6AD051CA01871001C8009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE6AD031CA01871001C8009 /* Main.storyboard */; };
 		7BE6AD071CA01871001C8009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BE6AD061CA01871001C8009 /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B0200531CB0B7200093004A /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		7B0200571CB1F8ED0093004A /* TabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabbarViewController.swift; path = ../TabbarViewController.swift; sourceTree = "<group>"; };
 		7BE6ACFC1CA01871001C8009 /* Mylaundrydemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mylaundrydemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE6ACFF1CA01871001C8009 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BE6AD041CA01871001C8009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -142,8 +146,10 @@
 		7BE6AD311CA787E1001C8009 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7B0200571CB1F8ED0093004A /* TabbarViewController.swift */,
 				7BF2A9901CAFF00D007A8D42 /* WashBagViewController.swift */,
 				7BF2A9871CAAC752007A8D42 /* pieceWashViewController.swift */,
+				7B0200531CB0B7200093004A /* UserViewController.swift */,
 				7BF2A97A1CA82305007A8D42 /* LoginViewController.swift */,
 				7BE6AD2D1CA01CA5001C8009 /* SplashViewController.swift */,
 				7BF2A9811CA963B4007A8D42 /* HomeViewController.swift */,
@@ -156,11 +162,11 @@
 			children = (
 				7BF2A98D1CAFBA5A007A8D42 /* NETrequest */,
 				7BF2A9831CAAA041007A8D42 /* RXProgressHUD.swift */,
-				7BE6AD061CA01871001C8009 /* Assets.xcassets */,
 				7BF2A9851CAAA0CA007A8D42 /* RXHUD.swift */,
+				7BE6AD061CA01871001C8009 /* Assets.xcassets */,
+				7BF2A97F1CA831E1007A8D42 /* Customcolors.swift */,
 				7BF2A97C1CA82498007A8D42 /* STHeiti-Light.ttc */,
 				7BE6AD0B1CA01871001C8009 /* Info.plist */,
-				7BF2A97F1CA831E1007A8D42 /* Customcolors.swift */,
 				7BE6AD081CA01871001C8009 /* LaunchScreen.storyboard */,
 			);
 			name = Others;
@@ -308,6 +314,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BF2A9881CAAC752007A8D42 /* pieceWashViewController.swift in Sources */,
+				7B0200541CB0B7200093004A /* UserViewController.swift in Sources */,
+				7B0200581CB1F8ED0093004A /* TabbarViewController.swift in Sources */,
 				7BF2A9841CAAA041007A8D42 /* RXProgressHUD.swift in Sources */,
 				7BF2A9821CA963B4007A8D42 /* HomeViewController.swift in Sources */,
 				7BF2A9861CAAA0CA007A8D42 /* RXHUD.swift in Sources */,

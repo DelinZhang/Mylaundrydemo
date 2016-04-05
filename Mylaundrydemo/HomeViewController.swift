@@ -21,6 +21,7 @@ class HomeViewController: UIViewController {
         self.setupWash()
         
         
+        
 
         // Do any additional setup after loading the view.
     }
