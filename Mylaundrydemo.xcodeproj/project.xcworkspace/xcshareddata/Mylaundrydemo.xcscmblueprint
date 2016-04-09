@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5647E4CF26A41FE535AFC35636345C2779576A17",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5647E4CF26A41FE535AFC35636345C2779576A17" : 0,
+    "CCC3DA8F78A0CD4D9DD64FDEC4CCE3BA4ACB034D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "382B2D37-E993-4EFE-A5B1-B0210DD73EC6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5647E4CF26A41FE535AFC35636345C2779576A17" : "Mylaundrydemo\/",
+    "CCC3DA8F78A0CD4D9DD64FDEC4CCE3BA4ACB034D" : "..\/..\/Downloads\/RXProgressHUD"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Mylaundrydemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Mylaundrydemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DelinZhang\/Mylaundrydemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5647E4CF26A41FE535AFC35636345C2779576A17"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NewUnsigned\/RXProgressHUD.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CCC3DA8F78A0CD4D9DD64FDEC4CCE3BA4ACB034D"
+    }
+  ]
+}
